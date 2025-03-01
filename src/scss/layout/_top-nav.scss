@@ -1,0 +1,50 @@
+@use '../abstract/index' as *;
+
+.top-nav{
+    background-color: $primary-color;
+    padding: 0;
+    // padding: 1rem 0;
+
+    &__wrapper{
+        @include flex(space-between, center);
+    }
+
+    &__item{
+        display: flex;
+        gap: 1rem;
+    }
+
+    &__item--info{
+        
+        span{
+            color: $text-color;
+        }
+     
+    }
+
+    &__icon{
+        font-size: 0.9rem;
+        color: $secondary-color;
+
+        &:hover{
+            color: $text-color;
+        }
+    }
+
+    &__item--social{
+        display: flex;
+        align-items: center;
+    }
+
+
+    &__btn{
+        background-color: $secondary-color;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 12px;
+        padding: 1rem 1.5rem;
+        color: #fff;
+    }
+ 
+}
