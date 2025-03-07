@@ -1,0 +1,76 @@
+@use '../abstract/index' as *;
+
+.footer{
+    padding: 70px 0;
+    background-color: #1d1d1d;
+
+    &__wrapper{
+        @include flex(space-between, stretch);
+        row-gap: 3rem;
+    }
+
+    &__item{
+        flex: 0 0 22%;
+    }
+
+    &__logo{
+
+         img{
+            width: 220px;
+            height: 10vh;
+        }
+    }
+
+    &__text{
+        line-height: 1.7;
+        margin-bottom: 1rem;
+    }
+
+    &__icons{
+        display: flex;
+        gap:1rem;
+    }
+
+    .icon{
+        color: $secondary-color;
+
+        &:hover{
+            opacity: 0.7;
+        }
+    }
+
+    &__title{
+        color: #fff;
+        margin-bottom: 2rem;
+    }
+
+    &__contact{
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+
+        span{
+            color: #fff;
+        }
+
+        a{
+            color: $secondary-color;
+        }
+    }
+
+    &__list{
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+    }
+
+    &__link{
+        display: block;
+        color: $secondary-color;
+        text-transform: capitalize;
+
+        &:hover{
+            color: #fff;
+        }
+    }
+}
