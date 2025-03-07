@@ -2,11 +2,49 @@
 
 
 .container {
-  width: 70%;
+  width: 80%;
   margin: auto;
 
   @include rwd(576) {
     width: 80%;
+  }
+}
+
+.cta{
+  text-align: center;
+  background-color: $primary-color;
+
+  &__heading{
+    color: $secondary-color;
+    font-size: 2rem;
+  }
+
+  &__p{
+    color: #fff;
+  }
+
+  &__box{
+    margin: 2rem 0;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    a{
+      color: #fff;
+    }
+
+    i{
+      color: $secondary-color;
+    }
+  }
+
+  &__btn{
+      background-color: $secondary-color;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 12px;
+        padding: 1rem 1.5rem;
+        color: #fff;
   }
 }
 
