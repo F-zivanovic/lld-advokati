@@ -1,56 +1,40 @@
 @use '../abstract/index' as *;
 
-.top-nav{
+
+.top-nav {
     background-color: $primary-color;
     padding: 0;
 
-    &__wrapper{
-        @include flex(space-between, center);
-    }
+    @include rwd(1200){ display: none; }
 
-    &__item{
+    &__wrapper { @include flex(space-between, center); }
+
+    &__item {
         display: flex;
         gap: 1rem;
-    }
-
-    &__item--info{
-        a{
-            color: $text-color;
-
-             &:hover{
-                 color: $secondary-color;
-            }
-        }
-
-        span{
-            color: $text-color;
-        }
-    }
-
-    &__item--social{
-        display: flex;
         align-items: center;
-
-        a{
-            &:hover{
-                opacity: 0.7;
-            }
-        }
     }
 
-    &__btn{
+    a {
+        color: $text-color;
+
+        &:hover { color: $secondary-color; }
+    }
+
+    &__btn {
         background-color: $secondary-color;
+        color: #fff !important;
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 1px;
         font-size: 12px;
         padding: 1rem 1.5rem;
-        color: #fff;
+
+        &:hover { opacity: 0.75; }
     }
 
-     .icon{
-        font-size: 0.9rem;
+    .icon {
         color: $secondary-color;
+        font-size: 0.9rem;
     }
- 
 }

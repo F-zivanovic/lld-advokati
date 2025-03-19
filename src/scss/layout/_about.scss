@@ -5,18 +5,23 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    // padding: 0;s
+    position: relative;
 
+
+    // Header
     &__header{
-        @include flex();
+        display: flex;
         position: relative;
         top: -150px;
+
+        @include rwd(1200){ display: none; }
     }
 
-      &__box{
-        text-align: center;
-        padding: 3rem 4rem;
+    &__box{
         background-color: $primary-color;
+        text-align: center;
+        padding:3rem 2rem;
+        flex: 1;
     }
 
     &__icon{
@@ -27,34 +32,43 @@
     &__heading{
         color: #fff;
         text-transform: uppercase;
-        font-size: 1rem;
         margin: 1rem 0;
     }
 
     &__text{
         line-height: 1.7;
         font-size: 0.9rem;
+
+        span{
+            display: block;
+            margin-top: 1rem;
+            color: #fff;
+        }
     }
 
 
-    &__title{
-        font-size: 26px;
-        color: #fff;
-        text-align: center;
-    }
-
+    // Main
     &__wrapper{
         display: flex;
-        justify-content: space-between;
-    }
+        align-items: center;
 
-    &__text{
-        margin-top: 42px;
-        color: #c9c9c9;
-        text-align: center;
+        @include rwd(1200){ flex-direction: column; }
     }
 
     &__item{
-        flex: 0 0 45%;
+        flex: 2;
+
+        &--img{ flex: 1; }
+    }
+
+    &__title{
+        font-size: 1.5rem;
+        color: #fff;
+    }
+
+    &__info{
+        margin-top: 1.5rem;
+        color: #c9c9c9;
+        line-height: 1.7;
     }
 }

@@ -3,29 +3,45 @@
 
 .hero{
     background:linear-gradient(rgba(38, 38, 38, 0.7), rgba(38, 38, 38, 0.7)), url('../../src/img/logo/7.jpg');
-    height: 120vh;
-    width: 100%;
+    height: 110vh;
     background-position: center;
     background-size: cover;
     padding: 0;
 
     .nav{
         @include flex(space-between, center);
-        height: 15vh;
-        
+        padding: 2rem 0;
+        position: relative;
+
+        @include rwd(992){
+            background-color: $primary-color;
+            width: 100%;
+            padding: 1rem 10%;
+        }
 
         &__list{
             display: flex;
             gap: 2rem;
-        }
+            transition: 0.4s linear;
 
-        &__logo{
+            &.active{ transform: translateX(0);}
 
-            img{
-                width: 220px;
-                height: 10vh;
+            @include rwd(992){
+                @include position(fixed, 0, 0, auto, auto, 200px, 100%);
+                background-color: $primary-color;
+                flex-direction: column;
+                justify-content: center;
+                padding:0 2rem;
+                transform: translateX(100%);
             }
         }
+
+        &__img{
+            width: 220px;
+            height: 50px;
+
+            @include rwd(576){ width: 150px; }
+        }    
 
         &__link{
             color: $text-color;
@@ -37,52 +53,84 @@
                 color: #fff;
             }
         }
+
+        &__hamburger{
+            display: none;
+            flex-direction: column;
+            gap: 0.5rem;
+            cursor: pointer;
+            z-index: 999;
+            background: transparent;
+
+            @include rwd(992){ display: flex; }
+
+            &__line{
+                width: 30px;
+                height: 2px;
+                background-color: #fff;
+                transition: 0.4s linear;
+            }
+
+            .line-1{
+                &.active{ opacity: 0;}
+            }
+
+            .line-2{
+                &.active{ transform: rotate(140deg); }
+            }
+
+            .line-3{
+                &.active{ transform: translateY(-10px) rotate(-140deg); }
+            }
+        }
     }
 
     &__wrapper{
-        @include flex(center, center, column);
+        @include flex(center, flex-start, column);
         height: 75vh;
-        text-align: center;
     }
 
     &__subtitle{
-        text-transform: uppercase;
         color: $secondary-color;
-        font-size: 2.5rem;
+        text-transform: uppercase;
+        font-size: clamp(1.5rem, 3.5vw, 2.5rem);
         font-weight: 500;
         position: relative;
+        padding-bottom: 0.5rem;
 
         &::after{
-            @include position(absolute, auto, auto, 0, 50%, 150px, 2px);
+            @include position(absolute, auto, auto, 0, 0, 100px, 2px);
+            background-color: $secondary-color;
             display: block;
             content: "";
-            background-color: $secondary-color;
         }
     }
 
     &__heading{
         color: #fff;
-        font-size: 4rem;
-        max-width: 900px;
+        font-size: clamp(2rem, 5vw, 3.5rem);
+        max-width: 950px;
         margin: 1rem 0;
+
+        @include rwd(576){ max-width: 100%; }
     }
 
     &__p{
         font-weight: 600;
-        max-width: 550px;
-        line-height: 1.8;
-        font-size: 1.1rem;
+        max-width: 450px;
         color: #dedede;
         margin-bottom: 1rem;
     }
 
     &__btn{
         background-color: $secondary-color;
+        color: $primary-color;
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 1px;
         font-size: 12px;
         padding: 1rem 1.5rem;
-        color: #fff;
+      
+        &:hover { opacity: 0.75; }
     }
 }

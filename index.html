@@ -28,34 +28,43 @@
     <!-- Top nav section starts -->
     <section class="top-nav">
         <div class="top-nav__wrapper container">
-            <article class="top-nav__item top-nav__item--info">
-                <a href="tel:+381063267679">
-                    <i class="fa-solid fa-phone icon"></i>
-                    +381063267679
+            <div class="top-nav__item top-nav__item--info">
+                <a href="tel:+38163267679" aria-label="Pozovite nas">
+                    <i class="fa-solid fa-phone icon" aria-hidden="true"></i>
+                    +38163267679
                 </a>
 
-                <a href="mailto:dimitrije.lukic@lld-advokati.rs">
-                    <i class="fa-solid fa-envelope-open icon"></i>
+                <a href="mailto:dimitrije.lukic@lld-advokati.rs" aria-label="Pošaljite email">
+                    <i class="fa-solid fa-envelope-open icon" aria-hidden="true"></i>
                     dimitrije.lukic@lld-advokati.rs
                 </a>
 
-                <span>
-                    <i class="fa-solid fa-clock icon"></i>
+                <time datetime="09:00-17:00">
+                    <i class="fa-solid fa-clock icon" aria-hidden="true"></i>
                     Pon - Pet 09:00-17:00
-                </span>
-            </article>
+                </time>
+            </div>
 
-            <article class="top-nav__item top-nav__item--social">
-                <a href="#" class="fa-brands fa-linkedin icon"></a>
-                <a href="#" class="fa-brands fa-facebook icon"></a>
-                <a href="#" class="fa-brands fa-instagram icon"></a>
+
+            <div class="top-nav__item top-nav__item--social">
+                <a href="#" aria-label="LinkedIn profil">
+                    <i class="fa-brands fa-linkedin icon"></i>
+                </a>
+                <a href="#" aria-label="Facebook profil">
+                    <i class="fa-brands fa-facebook icon"></i>
+                </a>
+                <a href="#" aria-label="Instagram profil">
+                    <i class="fa-brands fa-instagram icon"></i>
+                </a>
                 <a href="#consultation" class="top-nav__btn">online konsultacije</a>
-            </article>
-
+            </div>
 
         </div>
     </section>
     <!-- Top nav section ends -->
+
+
+
 
 
     <!-- Hero section starts -->
@@ -63,50 +72,35 @@
 
         <!-- Nav section starts -->
         <nav class="nav container">
-            <a href="index.html" class="nav__logo">
-                <img src="src/img/logo/LLD Advokati Logo_Sekundarni Logo - Zlatni.png" alt="website logo">
+            <a href="index.html">
+                <img src="src/img/logo/LLD Advokati Logo_Sekundarni Logo - Zlatni.png" 
+                alt="LLD Advokati logo - Advokatska kancelarija Beograd" 
+                class="nav__img">
             </a>
-            <ul class="nav__list">
-                <li class="nav__item">
-                    <a href="index.html" class="nav__link active">početna</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link">tim</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link">blog</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link">kontakt</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link">kontakt</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link">kontakt</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link">kontakt</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link">kontakt</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link">kontakt</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link">kontakt</a>
-                </li>
+
+            <ul class="nav__list" id="nav-list">
+                <li><a href="index.html" class="nav__link active" aria-current="page">početna</a></li>
+                <li><a href="#about" class="nav__link">o nama</a></li>
+                <li><a href="#services" class="nav__link">usluge</a></li>
+                <li><a href="#team" class="nav__link">naš tim</a></li>
+                <li><a href="#" class="nav__link">blog</a></li>
+                <li><a href="#contact" class="nav__link">kontakt</a></li>
             </ul>
+
+            <button class="nav__hamburger" id="hamburger" aria-label="Otvorite mobilni meni" aria-expanded="false" aria-controls="nav-list">
+                <div class="nav__hamburger__line line-1"></div>
+                <div class="nav__hamburger__line line-2"></div>
+                <div class="nav__hamburger__line line-3"></div>
+            </button>
+
         </nav>
         <!-- Nav section ends -->
 
         <div class="hero__wrapper container">
             <p class="hero__subtitle">LLD advokati</p>
             <h1 class="hero__heading">Advokatska kancelarija Beograd</h1>
-            <p class="hero__p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, magnam atque quas
-                esse repudiandae!</p>
-            <a href="" class="hero__btn">kontaktirajte nas</a>
+            <p class="hero__p">Honeste vivere, alterum non laedere, suum quique tribuere</p>
+            <a href="#contact" class="hero__btn">kontaktirajte nas</a>
         </div>
 
     </section>
@@ -115,43 +109,53 @@
 
 
     <!-- About section starts -->
-    <section class="about">
-        <div class="about__header container">
-            <article class="about__box">
-                <span class="fa-solid fa-gavel about__icon"></span>
-                <h2 class="about__heading">radno pravo</h2>
-                <p class="about__text">Far far away, behind the word mountains, far from the countries Vokalia and
-                    Consonantia, there live the blind texts.
-                    Separated they.</p>
-            </article>
-            <article class="about__box">
-                <span class="fa-solid fa-gavel about__icon"></span>
-                <h2 class="about__heading">radno pravo</h2>
-                <p class="about__text">Far far away, behind the word mountains, far from the countries Vokalia and
-                    Consonantia, there live the blind texts.
-                    Separated they.</p>
-            </article>
-            <article class="about__box">
-                <span class="fa-solid fa-gavel about__icon"></span>
-                <h2 class="about__heading">radno pravo</h2>
-                <p class="about__text">Far far away, behind the word mountains, far from the countries Vokalia and
-                    Consonantia, there live the blind texts.
-                    Separated they.</p>
-            </article>
-        </div>
+    <section class="about" id="about" role="region" aria-labelledby="about-title">
 
+        <!-- Header -->
+        <header class="about__header container">
+            <article class="about__box">
+                <i class="fa-solid fa-gavel about__icon" aria-hidden="true"></i>
+                <h2 class="about__heading">krivično pravo</h2>
+                <p class="about__text">„Advokat treba da raspolaže izuzetnom radnom energijom, znanjem i upornošću – sve u službi svoje ambicije, a u interesu svoga branjenika.“
+                    <span>Veljko Guberina</span>
+                </p>
+            </article>
+
+            <article class="about__box">
+                <i class="fa-solid fa-gavel about__icon" aria-hidden="true"></i>
+                <h2 class="about__heading">privredno pravo</h2>
+                <p class="about__text">„Privredno pravo je ključ za održavanje ravnoteže između tržišne slobode i društvene odgovornosti.“
+                    <span>Teodor Ruzvelt</span>
+                </p>
+            </article>
+
+            <article class="about__box">
+                <i class="fa-solid fa-gavel about__icon" aria-hidden="true"></i>
+                <h2 class="about__heading">radno pravo</h2>
+                <p class="about__text">„Radnici i poslodavci ne bi trebalo da budu suparnici. Njihov odnos treba da bude temeljen na međusobnom poštovanju, saradnji i zajedničkom cilju.“
+                    <span>Nelson Mendela</span>
+                </p>
+            </article>
+        </header>
+
+        <!-- Main -->
         <div class="about__wrapper container">
             <article class="about__item">
-                <h3 class="about__title">o nama</h3>
-                <p class="about__text">Far far away, behind the word mountains, far from the countries Vokalia and
-                    Consonantia, there live the blind texts.
-                    Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A
-                    small river named
-                    Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic
-                    country.</p>
+                <h3 class="about__title" id="about-title">o nama</h3>
+                <p class="about__info">
+                    LLD Advokati je mlada, dinamična i ambiciozna advokatska kancelarija koja pruža sveobuhvatnu pravnu pomoć i savete u različitim granama prava. Iako smo relativno nova kancelarija, iza nas stoji tim stručnih i posvećenih advokata sa bogatim iskustvom i željom da pružimo najviši nivo pravne pomoći svojim klijentima. Sticali smo iskustvo kroz najizazovnije poslove koje advokatska profesija može da ponudi.
+                </p>
+                <p class="about__info">
+                    Kao kancelarija koja prati najnovije pravne trendove i inovacije, trudimo se da u svakom trenutku ponudimo najefikasnija rešenja koja su u skladu sa potrebama naših klijenata. Naš cilj je da budemo pouzdan partner u rešavanju svih vaših pravnih izazova, bilo da se radi o svakodnevnim pravnim pitanjima, bilo o složenijim sporovima.
+                </p>
+                <p class="about__info">
+                    Naši advokati su specijalizovani u pružanju usluga pravnog konstaltinga iz oblasti. korporativnog, radnog prava, imigracionog prava, prava intelektualne svojine, M&A, pripremanju svih vrsta ugovora, zastupanju privrednih subjekata u svim vrstama sudskih i drugih postupaka i mnogim drugim oblastima iz domena moderne advokature.
+                    Naša posvećenost, efikasnost i otvorenost za nove izazove čine nas kancelarijom kojoj možete verovati. 
+                </p>
             </article>
-            <article class="about__item">
-                <!-- <img src="src/img/ivana_cvetkovic.webp" alt=""> -->
+
+            <article class="about__item about__item--img">
+                <img src="src/img/dimitrije2.png" alt="Advokat Beograd - Advokat Dimitrije Lukić" class="about__img">
             </article>
         </div>
     </section>
@@ -159,14 +163,34 @@
 
 
 
+
+
     <!-- Services section starts -->
     <section class="services container" id="services">
-        <p class="services__subtitle">what we are expert at</p>
-        <h2 class="services__title">Legal Practices Area</h2>
+
+        <!-- Header -->
+        <header class="services__header" style="text-align: center;">
+            <p class="section-subtitle">naša stručnost</p>
+            <h2 class="section-title">Pravne oblasti</h2>
+        </header>
+
+        <!-- Main -->
         <div class="services__wrapper">
             <article class="services__item">
-                <span class="fa-solid fa-gavel services__icon"></span>
-                <h3 class="services__heading">Coporate & Securities</h3>
+                <i class="fa-solid fa-gavel services__icon"></i>
+                <h3 class="services__heading">zaštita podataka o ličnosti</h3>
+                <p class="services__desc">We can provide corporate governance, helping clients manage the
+                    responsibilities of running a corporation in financial
+                    field.</p>
+                <a href="#" class="services__link">
+                    vidi više
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </article>
+
+            <article class="services__item">
+                <i class="fa-solid fa-gavel services__icon"></i>
+                <h3 class="services__heading">upravno i poresko pravo</h3>
                 <p class="services__desc">We can provide corporate governance, helping clients manage the
                     responsibilities of running a corporation in financial
                     field.</p>
@@ -175,9 +199,10 @@
                     <i class="fa-solid fa-arrow-right"></i>
                 </a>
             </article>
+
             <article class="services__item">
-                <span class="fa-solid fa-gavel services__icon"></span>
-                <h3 class="services__heading">Coporate & Securities</h3>
+                <i class="fa-solid fa-gavel services__icon"></i>
+                <h3 class="services__heading">rešavanje sporova</h3>
                 <p class="services__desc">We can provide corporate governance, helping clients manage the
                     responsibilities of running a corporation in financial
                     field.</p>
@@ -186,9 +211,10 @@
                     <i class="fa-solid fa-arrow-right"></i>
                 </a>
             </article>
+
             <article class="services__item">
-                <span class="fa-solid fa-gavel services__icon"></span>
-                <h3 class="services__heading">Coporate & Securities</h3>
+                <i class="fa-solid fa-gavel services__icon"></i>
+                <h3 class="services__heading">radno pravo</h3>
                 <p class="services__desc">We can provide corporate governance, helping clients manage the
                     responsibilities of running a corporation in financial
                     field.</p>
@@ -197,9 +223,10 @@
                     <i class="fa-solid fa-arrow-right"></i>
                 </a>
             </article>
+
             <article class="services__item">
-                <span class="fa-solid fa-gavel services__icon"></span>
-                <h3 class="services__heading">Coporate & Securities</h3>
+                <i class="fa-solid fa-gavel services__icon"></i>
+                <h3 class="services__heading">privredno pravo</h3>
                 <p class="services__desc">We can provide corporate governance, helping clients manage the
                     responsibilities of running a corporation in financial
                     field.</p>
@@ -208,9 +235,10 @@
                     <i class="fa-solid fa-arrow-right"></i>
                 </a>
             </article>
+
             <article class="services__item">
-                <span class="fa-solid fa-gavel services__icon"></span>
-                <h3 class="services__heading">Coporate & Securities</h3>
+                <i class="fa-solid fa-gavel services__icon"></i>
+                <h3 class="services__heading">pravo nepokretnosti i građenje</h3>
                 <p class="services__desc">We can provide corporate governance, helping clients manage the
                     responsibilities of running a corporation in financial
                     field.</p>
@@ -219,9 +247,70 @@
                     <i class="fa-solid fa-arrow-right"></i>
                 </a>
             </article>
+
             <article class="services__item">
-                <span class="fa-solid fa-gavel services__icon"></span>
-                <h3 class="services__heading">Coporate & Securities</h3>
+                <i class="fa-solid fa-gavel services__icon"></i>
+                <h3 class="services__heading">pravo intelektualne svojine</h3>
+                <p class="services__desc">We can provide corporate governance, helping clients manage the
+                    responsibilities of running a corporation in financial
+                    field.</p>
+                <a href="#" class="services__link">
+                    Learn More
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </article>
+
+            <article class="services__item">
+                <i class="fa-solid fa-gavel services__icon"></i>
+                <h3 class="services__heading">medijsko pravo</h3>
+                <p class="services__desc">We can provide corporate governance, helping clients manage the
+                    responsibilities of running a corporation in financial
+                    field.</p>
+                <a href="#" class="services__link">
+                    Learn More
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </article>
+
+            <article class="services__item">
+                <i class="fa-solid fa-gavel services__icon"></i>
+                <h3 class="services__heading">krivično i prekršajno pravo</h3>
+                <p class="services__desc">We can provide corporate governance, helping clients manage the
+                    responsibilities of running a corporation in financial
+                    field.</p>
+                <a href="#" class="services__link">
+                    Learn More
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </article>
+
+            <article class="services__item">
+                <i class="fa-solid fa-gavel services__icon"></i>
+                <h3 class="services__heading">imigraciono pravo</h3>
+                <p class="services__desc">We can provide corporate governance, helping clients manage the
+                    responsibilities of running a corporation in financial
+                    field.</p>
+                <a href="#" class="services__link">
+                    Learn More
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </article>
+
+            <article class="services__item">
+                <i class="fa-solid fa-gavel services__icon"></i>
+                <h3 class="services__heading">građansko pravo</h3>
+                <p class="services__desc">We can provide corporate governance, helping clients manage the
+                    responsibilities of running a corporation in financial
+                    field.</p>
+                <a href="#" class="services__link">
+                    Learn More
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </article>
+
+            <article class="services__item">
+                <i class="fa-solid fa-gavel services__icon"></i>
+                <h3 class="services__heading">bankartsvo i finansije</h3>
                 <p class="services__desc">We can provide corporate governance, helping clients manage the
                     responsibilities of running a corporation in financial
                     field.</p>
@@ -236,7 +325,7 @@
 
 
     <!-- CTA section starts -->
-    <section class="cta">
+    <!-- <section class="cta">
         <div class="cta__wrapper">
             <h2 class="cta__heading">zakažite online konsultacije
             </h2>
@@ -253,11 +342,11 @@
             </div>
             <a href="#" class="cta__btn">zakažite</a>
         </div>
-    </section>
+    </section> -->
     <!-- CTA section ends -->
 
     <!-- Team section starts -->
-    <section class="team container" id="team">
+    <!-- <section class="team container" id="team">
 
         <h2 class="team__title">Partners at Attorna</h2>
         <a href="#" class="team__subtitle">view all people
@@ -292,12 +381,12 @@
                 </div>
             </article>
         </div>
-    </section>
+    </section> -->
     <!-- Team section ends -->
 
 
     <!-- Contact section starts -->
-    <section class="contact container" id="contact">
+    <!-- <section class="contact container" id="contact">
         <p class="services__subtitle">what we are expert at</p>
         <h2 class="services__title">Legal Practices Area</h2>
         <div class="contact__wrapper">
@@ -320,12 +409,12 @@
             </article>
         </div>
 
-    </section>
+    </section> -->
     <!-- Contact section ends -->
 
 
     <!-- Footer section starts -->
-    <footer class="footer">
+    <!-- <footer class="footer">
 
         <div class="footer__wrapper container">
             <article class="footer__item">
@@ -376,10 +465,12 @@
         </div>
 
 
-    </footer>
+    </footer> -->
     <!-- Footer section ends -->
 
 
+    <!-- Custom JS -->
+     <script src="src/js/main.js"></script>
 </body>
 
 </html>

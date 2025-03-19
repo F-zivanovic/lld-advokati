@@ -1,56 +1,22 @@
 @use '../abstract/index' as *;
 
+
 .services{
-    text-align: center;
-
-    &__subtitle{
-        font-size: 14px;
-        font-weight: 500;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        margin-bottom: 5px;
-        color: #a8a8a8;
-    }
-
-    &__title{
-        font-size: 30px;
-        color: #303030;
-        // position: relative;
-
-        &::after{
-            // position: absolute;
-            display: block;
-            content: "";
-            width: 30px;
-            height: 1px;
-            // bottom: 0;
-            // left: 0;
-            background-color: $primary-color;
-            margin: 2rem auto 0;
-            transform: rotate(91deg);
-        }
-    }
+    // text-align: center;
 
     &__wrapper{
+        @include flex(space-between, stretch, wrap);
         margin-top: 4rem;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
         row-gap: 5rem;
     }
 
-    &__item{
-        border-color: #e6e6e6;
-        flex: 0 0 30%;
-    }
+    &__item{ flex: 0 0 22%; }
 
     &__heading{
         text-transform: uppercase;
-        font-size: 14px;
         font-weight: 600;
         letter-spacing: 3px;
         color: $secondary-color;
-        
     }
 
     &__desc{
@@ -64,12 +30,12 @@
     }
 
     &__link{
-            display: inline-block;
-    vertical-align: middle;
+        color: $secondary-color;
+        display: inline-block;
+        vertical-align: middle;
         font-size: 13px;
         font-weight: 600;
         letter-spacing: 2px;
-        color: $secondary-color;
         text-transform: uppercase;
     }
 }
