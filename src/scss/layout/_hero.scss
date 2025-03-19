@@ -123,14 +123,8 @@
     }
 
     &__btn{
-        background-color: $secondary-color;
-        color: $primary-color;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        font-size: 12px;
-        padding: 1rem 1.5rem;
-      
-        &:hover { opacity: 0.75; }
+       color: #fff;
+
+       &:hover{ color: $text-color;}
     }
 }

@@ -2,15 +2,20 @@
 
 
 .services{
-    // text-align: center;
+    text-align: center;
 
     &__wrapper{
         @include flex(space-between, stretch, wrap);
-        margin-top: 4rem;
+        margin: 4rem 0 2rem;
         row-gap: 5rem;
     }
 
-    &__item{ flex: 0 0 22%; }
+    &__item{ 
+        flex: 0 0 30%; 
+        
+        @include rwd(1200){ flex: 0 0 45%; }
+        @include rwd(992){ flex: 0 0 100%; }
+    }
 
     &__heading{
         text-transform: uppercase;
@@ -38,4 +43,5 @@
         letter-spacing: 2px;
         text-transform: uppercase;
     }
+
 }

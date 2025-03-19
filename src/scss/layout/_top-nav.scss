@@ -22,15 +22,14 @@
     }
 
     &__btn {
-        background-color: $secondary-color;
         color: #fff !important;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        font-size: 12px;
-        padding: 1rem 1.5rem;
+        border: none;
 
-        &:hover { opacity: 0.75; }
+        &:hover { 
+            border: none;
+            background-color: $secondary-color;
+            opacity: 0.75;
+        }
     }
 
     .icon {
