@@ -13,3 +13,12 @@
 @use 'layout/team';
 @use 'layout/contact';
 @use 'layout/footer';
+
+// Biography page
+@use 'pages/bio/bio';
+
+// Areas page
+@use 'pages/areas/areas';
+
+// Service pages
+@use 'pages/service/service';

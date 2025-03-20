@@ -1,0 +1,40 @@
+@use '../../abstract/index' as *;
+
+.service{
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+
+    &__item{
+        flex: 3;
+        text-align: justify;
+        
+        &--aside{ flex: 1 ;}
+    }
+
+    &__title{
+        color: $primary-color;
+        margin-bottom: 2rem;
+    }
+
+    &__subtitle{
+        color: $primary-color;
+        text-transform: uppercase;
+        font-size: 1rem;
+        letter-spacing: 3px;
+        margin-bottom: 1rem;
+    }
+
+    &__text{
+        color: #555;
+        line-height: 1.7;
+        margin-bottom: 1.5rem;
+    }
+
+    &__list{
+        color: #555;
+        margin-bottom: 1.5rem;
+
+        span{ font-weight: bold; }
+    }
+}

@@ -12,26 +12,40 @@
 
     &__item{ 
         flex: 0 0 30%; 
-        
+
         @include rwd(1200){ flex: 0 0 45%; }
         @include rwd(992){ flex: 0 0 100%; }
     }
 
+    &__picture{
+        position: relative;
+
+        &::after{
+            @include position(absolute, 0, auto, auto, 0, 100%, 100%);
+            content: "";
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
+        }
+    }
+
+    &__img{
+        height: 200px;
+        width: 100%;
+
+        @include rwd(992){ height: 300px; }
+    }
+
     &__heading{
+        color: $secondary-color;
         text-transform: uppercase;
         font-weight: 600;
+        font-size: 0.9rem;
         letter-spacing: 3px;
-        color: $secondary-color;
+        margin-top: 1.5rem;
     }
 
     &__desc{
         margin: 20px 0;
         color: #6d6d6d;
-    }
-
-    &__icon{
-        font-size: 2rem;
-        margin-bottom: 1rem;
     }
 
     &__link{
@@ -42,6 +56,8 @@
         font-weight: 600;
         letter-spacing: 2px;
         text-transform: uppercase;
+
+        &:hover{ color: $primary-color; }
     }
 
 }

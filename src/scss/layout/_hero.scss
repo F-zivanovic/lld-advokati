@@ -85,9 +85,23 @@
         }
     }
 
+    &--sm{
+        height: 40vh;
+        text-align: center;
+
+        .hero__heading{ max-width: 100%; }
+    }
+
     &__wrapper{
         @include flex(center, flex-start, column);
         height: 75vh;
+
+        &--sm{
+            height: 20vh;
+            align-items: center;
+
+            @include rwd(992){ height: 30vh;}
+        }
     }
 
     &__subtitle{
