@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Advokatska kancelarija Beograd</title>
 
+    <meta name="description" content="">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="src/css/main.css">
 
@@ -13,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
 
     <!-- Font awesome CDN -->
@@ -30,30 +32,30 @@
         <div class="top-nav__wrapper container">
             <div class="top-nav__item top-nav__item--info">
                 <a href="tel:+38163267679" aria-label="Pozovite nas">
-                    <i class="fa-solid fa-phone icon" aria-hidden="true"></i>
+                    <span class="fa-solid fa-phone icon" aria-hidden="true"></span>
                     +38163267679
                 </a>
 
                 <a href="mailto:dimitrije.lukic@lld-advokati.rs" aria-label="Pošaljite email">
-                    <i class="fa-solid fa-envelope-open icon" aria-hidden="true"></i>
+                    <span class="fa-solid fa-envelope-open icon" aria-hidden="true"></span>
                     dimitrije.lukic@lld-advokati.rs
                 </a>
 
-                <time datetime="09:00-17:00">
-                    <i class="fa-solid fa-clock icon" aria-hidden="true"></i>
+                <time datetime="PT9H">
+                    <span class="fa-solid fa-clock icon" aria-hidden="true"></span>
                     Pon - Pet 09:00-17:00
                 </time>
             </div>
 
             <div class="top-nav__item top-nav__item--social">
                 <a href="#" aria-label="LinkedIn profil">
-                    <i class="fa-brands fa-linkedin icon"></i>
+                    <span class="fa-brands fa-linkedin icon" aria-hidden="true"></span>
                 </a>
                 <a href="#" aria-label="Facebook profil">
-                    <i class="fa-brands fa-facebook icon"></i>
+                    <span class="fa-brands fa-facebook icon" aria-hidden="true"></span>
                 </a>
                 <a href="#" aria-label="Instagram profil">
-                    <i class="fa-brands fa-instagram icon"></i>
+                    <span class="fa-brands fa-instagram icon" aria-hidden="true"></span>
                 </a>
                 <a href="#consultation" class="top-nav__btn btn">online konsultacije</a>
             </div>
@@ -70,17 +72,18 @@
     <section class="hero">
 
         <!-- Nav section starts -->
-        <nav class="nav container">
+        <nav class="nav container" role="navigation">
             <a href="index.html">
                 <img src="src/img/logo/LLD Advokati Logo_Sekundarni Logo - Zlatni.png" 
                 alt="LLD Advokati logo - Advokatska kancelarija Beograd" 
-                class="nav__img">
+                class="nav__img"
+                width="220" height="50">
             </a>
 
             <ul class="nav__list" id="nav-list">
                 <li><a href="index.html" class="nav__link active" aria-current="page">početna</a></li>
                 <li><a href="#about" class="nav__link">o nama</a></li>
-                <li><a href="#services" class="nav__link">usluge</a></li>
+                <li><a href="oblasti-rada.html" class="nav__link">usluge</a></li>
                 <li><a href="#team" class="nav__link">naš tim</a></li>
                 <li><a href="#" class="nav__link">blog</a></li>
                 <li><a href="#contact" class="nav__link">kontakt</a></li>
@@ -98,12 +101,14 @@
         <div class="hero__wrapper container">
             <p class="hero__subtitle">LLD advokati</p>
             <h1 class="hero__heading">Advokatska kancelarija Beograd</h1>
-            <p class="hero__p">Honeste vivere, alterum non laedere, suum quique tribuere</p>
+            <p class="hero__text"><span lang="la">Honeste vivere, alterum non laedere, suum quique tribuere</span></p>
             <a href="#contact" class="hero__btn btn">kontaktirajte nas</a>
         </div>
 
     </section>
     <!-- Hero section ends -->
+
+
 
 
 
@@ -113,7 +118,7 @@
         <!-- Header -->
         <header class="about__header container">
             <article class="about__box">
-                <i class="fa-solid fa-gavel about__icon" aria-hidden="true"></i>
+                <span class="fa-solid fa-gavel about__icon" aria-hidden="true"></span>
                 <h2 class="about__heading">krivično pravo</h2>
                 <p class="about__text">„Advokat treba da raspolaže izuzetnom radnom energijom, znanjem i upornošću – sve u službi svoje ambicije, a u interesu svoga branjenika.“
                     <span>Veljko Guberina</span>
@@ -121,7 +126,7 @@
             </article>
 
             <article class="about__box">
-                <i class="fa-solid fa-gavel about__icon" aria-hidden="true"></i>
+                <span class="fa-solid fa-gavel about__icon" aria-hidden="true"></span>
                 <h2 class="about__heading">privredno pravo</h2>
                 <p class="about__text">„Privredno pravo je ključ za održavanje ravnoteže između tržišne slobode i društvene odgovornosti.“
                     <span>Teodor Ruzvelt</span>
@@ -129,7 +134,7 @@
             </article>
 
             <article class="about__box">
-                <i class="fa-solid fa-gavel about__icon" aria-hidden="true"></i>
+                <span class="fa-solid fa-gavel about__icon" aria-hidden="true"></span>
                 <h2 class="about__heading">radno pravo</h2>
                 <p class="about__text">„Radnici i poslodavci ne bi trebalo da budu suparnici. Njihov odnos treba da bude temeljen na međusobnom poštovanju, saradnji i zajedničkom cilju.“
                     <span>Nelson Mendela</span>
@@ -148,7 +153,7 @@
                     Kao kancelarija koja prati najnovije pravne trendove i inovacije, trudimo se da u svakom trenutku ponudimo najefikasnija rešenja koja su u skladu sa potrebama naših klijenata. Naš cilj je da budemo pouzdan partner u rešavanju svih vaših pravnih izazova, bilo da se radi o svakodnevnim pravnim pitanjima, bilo o složenijim sporovima.
                 </p>
                 <p class="about__info">
-                    Naši advokati su specijalizovani u pružanju usluga pravnog konstaltinga iz oblasti. korporativnog, radnog prava, imigracionog prava, prava intelektualne svojine, M&A, pripremanju svih vrsta ugovora, zastupanju privrednih subjekata u svim vrstama sudskih i drugih postupaka i mnogim drugim oblastima iz domena moderne advokature.
+                    Naši advokati su specijalizovani u pružanju usluga pravnog konstaltinga iz oblasti korporativnog, radnog prava, imigracionog prava, prava intelektualne svojine, M&A, pripremanju svih vrsta ugovora, zastupanju privrednih subjekata u svim vrstama sudskih i drugih postupaka i mnogim drugim oblastima iz domena moderne advokature.
                     Naša posvećenost, efikasnost i otvorenost za nove izazove čine nas kancelarijom kojoj možete verovati. 
                 </p>
 
@@ -262,7 +267,7 @@
             </article>
         </div>
 
-        <a href="services.html" class="btn">Vidi sve usluge</a>
+        <a href="oblasti-rada.html" class="btn" aria-label="Pregledaj sve naše usluge iz pravnih oblasti">Vidi sve usluge</a>
 
     </section>
     <!-- Services section ends -->
@@ -272,18 +277,18 @@
 
 
     <!-- CTA section starts -->
-    <section class="cta" aria-labelledby="cta-title">
+    <section class="cta" id="consultation" aria-labelledby="cta-title">
         <div class="cta__wrapper container">
             <h2 class="cta__heading" id="cta-title">zakažite online konsultacije</h2>
             <p class="cta__p">Izaberite termin koji odgovara vašem rasporedu.</p>
 
             <div class="cta__box">
-                <a href="mailto:" class="cta__link" aria-label="Pošaljite nam email">
+                <a href="mailto:dimitrije.lukic@lld-advokati.rs" class="cta__link" aria-label="Pošaljite nam email">
                     <span class="fa-solid fa-envelope-open" aria-hidden="true"></span>
                     dimitrije.lukic@lld-advokati.rs</a>
-                <a href="tel:" class="cta__link" aria-label="Pozovite nas">
+                <a href="tel:+38163267679" class="cta__link" aria-label="Pozovite nas">
                     <span class="fa-solid fa-phone" aria-hidden="true"></span>
-                    +381063267679
+                    +38163267679
                 </a>
             </div>
             <a href="#" class="cta__btn btn" aria-label="Zakažite online konsultacije putem Zoom platforme">zakažite</a>
@@ -312,12 +317,12 @@
 
             <article class="team__item">
                 <div class="team__img">
-                    <img src="src/img/dimitrije2.png" alt="Advokad Dimitrije Lukič - Advokat Beograd">
+                    <img src="src/img/dimitrije2.png" alt="Advokat Dimitrije Lukič - Advokat Beograd">
                 </div>
                 <div class="team__body">
                     <h3 class="team__name">Dimitrije Lukić</h3>
                     <p class="team__role">advokat / partner</p>
-                    <a href="dimitrije-lukic.html" class="team__link" aria-label="Procitajte vise o Dimitriju">saznaj više</a>
+                    <a href="dimitrije-lukic.html" class="team__link" aria-label="Pročitajte više o Dimitriju">saznaj više</a>
                 </div>
             </article>
           
@@ -340,17 +345,17 @@
         
         <!-- Main -->
         <div class="contact__wrapper">
-            <form action="" class="contact__item">
+            <form class="contact__item">
                 <div class="contact__box">
-                    <input type="text" class="contact__input" placeholder="Ime*">
-                    <input type="text" class="contact__input" placeholder="Telefon*">
+                    <input type="text" class="contact__input" placeholder="Ime*" required autocapitalize="words">
+                    <input type="text" class="contact__input" placeholder="Telefon*" required>
                 </div>
-                <input type="email" class="contact__input" placeholder="Email*">
-                <textarea name="" class="contact__input" placeholder="Poruka*"></textarea>
-                <button class="contact__btn btn">pošalji upit</button>
+                <input type="email" class="contact__input" placeholder="Email*" required>
+                <textarea class="contact__input" placeholder="Poruka*" required></textarea>
+                <button type="submit" class="contact__btn btn">pošalji upit</button>
             </form>
             <article class="contact__item">
-                <img src="src/img/logo/4.jpg" alt="Advokatksa kancelarija LLD Beograd" class="contact__img">
+                <img src="src/img/logo/4.jpg" alt="Advokatksa kancelarija Beograd" class="contact__img">
             </article>
         </div>
     </section>
@@ -366,25 +371,28 @@
         <div class="footer__wrapper container">
             <article class="footer__item">
                 <a href="index.html">
-                    <img src="src/img/logo/LLD Advokati Logo_Sekundarni Logo - Zlatni.png" alt="LLD Advokati logo - Advokatska kancelarija Beograd" class="footer__img">
+                    <img src="src/img/logo/LLD Advokati Logo_Sekundarni Logo - Zlatni.png" 
+                    alt="LLD Advokati logo - Advokatska kancelarija Beograd" 
+                    class="footer__img"
+                    width="220" height="50">
                 </a>
                 <p class="footer__text">One morning, when Gregor Samsa woke from troubled dreams, he found himself
                     transformed in his bed into.</p>
                 <div class="footer__icons">
                     <a href="#" class="footer__icon" aria-label="Posetite naš Linkedin profil">
-                        <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                        <span class="fa-brands fa-linkedin" aria-hidden="true"></span>
                     </a>
                     <a href="#" class="footer__icon" aria-label="Posetite naš Facebook profil">
-                        <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+                        <span class="fa-brands fa-facebook" aria-hidden="true"></span>
                     </a>
-                    <a href="#" class="footer__icon" aria-label="Posetite našInstagram profil">
-                        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                    <a href="#" class="footer__icon" aria-label="Posetite naš Instagram profil">
+                        <span class="fa-brands fa-instagram" aria-hidden="true"></span>
                     </a>
                 </div>
             </article>
 
             <article class="footer__item">
-                <h3 class="footer__title">Kotakt</h3>
+                <h3 class="footer__title">Kontakt</h3>
                 <address>
                     <p class="contact__address">Mirjane Kodžić 31, Beograd</p>
                     <p style="margin-top: 1rem;">
@@ -399,26 +407,34 @@
             <article class="footer__item">
                 <h3 class="footer__title">Pravne oblasti</h3>
                 <ul class="footer__list">
-                    <li><a href="#" class="footer__link">Privredno pravo</a></li>
-                    <li><a href="#" class="footer__link">Nepokretnosti</a></li>
-                    <li><a href="#" class="footer__link">Rešavanje sporova</a></li>
-                    <li><a href="#" class="footer__link">Radno pravo</a></li>
-                    <li><a href="#" class="footer__link">Imigraciono pravo</a></li>
-                    <li><a href="#" class="footer__link">Zaštita podataka</a></li>
+                    <li><a href="privredno-pravo.html" class="footer__link">Privredno pravo</a></li>
+                    <li><a href="nepokretnosti.html" class="footer__link">Nepokretnosti</a></li>
+                    <li><a href="resavanje-sporovi.html" class="footer__link">Rešavanje sporova</a></li>
+                    <li><a href="radno-pravo.html" class="footer__link">Radno pravo</a></li>
+                    <li><a href="imigraciono-pravo.html" class="footer__link">Imigraciono pravo</a></li>
+                    <li><a href="zastita-podataka.html" class="footer__link">Zaštita podataka</a></li>
                 </ul>
             </article>
 
             <article class="footer__item">
                 <h3 class="footer__title">Linkovi</h3>
                 <ul class="footer__list">
-                    <li><a href="index.html" class="footer__link">Početna</a></li>
+                    <li><a href="index.html" class="footer__link" aria-current="page">Početna</a></li>
                     <li><a href="#about" class="footer__link">O nama</a></li>
                     <li><a href="#team" class="footer__link">Tim</a></li>
                     <li><a href="#" class="footer__link">Blog</a></li>
                     <li><a href="#contact" class="footer__link">Kontakt</a></li>
-                    <li><a href="#cta" class="footer__link">Online konsultacije</a></li>
+                    <li><a href="#consultation" class="footer__link">Online konsultacije</a></li>
                 </ul>
             </article>
+        </div>
+
+          <!-- Copyright Section -->
+          <div class="footer__copyright container">
+            <p>&copy; <span id="year"></span> LLD Advokati. Sva prava zadržana. | 
+                <a href="privacy-policy.html" class="footer__link">Politika privatnosti</a> | 
+                <a href="terms-of-service.html" class="footer__link">Uslovi korišćenja</a>
+            </p>
         </div>
 
     </footer>

@@ -1,12 +1,13 @@
 @use '../abstract/index' as *;
 
 .footer{
-    padding: 70px 0;
+    padding: 70px 0 0;
     background-color: #1d1d1d;
 
     &__wrapper{
         @include flex(space-between, stretch);
         row-gap: 3rem;
+        padding-bottom: 4rem;
 
         @include rwd(1200){ flex-direction: column; }
     }
@@ -55,5 +56,12 @@
         color: $secondary-color;
 
         &:hover{ color: #fff;}
+    }
+
+    &__copyright{
+        padding: 2rem 0;
+        border-top: 2px solid $secondary-color;
+
+        a{ display: inline;}
     }
 }

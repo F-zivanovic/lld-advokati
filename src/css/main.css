@@ -324,7 +324,7 @@ a, button {
     max-width: 100%;
   }
 }
-.hero__p {
+.hero__text {
   font-weight: 600;
   max-width: 450px;
   color: #dedede;
@@ -578,7 +578,7 @@ a, button {
 }
 
 .footer {
-  padding: 70px 0;
+  padding: 70px 0 0;
   background-color: #1d1d1d;
 }
 .footer__wrapper {
@@ -588,6 +588,7 @@ a, button {
   flex-flow: row nowrap;
   gap: 0;
   row-gap: 3rem;
+  padding-bottom: 4rem;
 }
 @media (max-width: 1200px) {
   .footer__wrapper {
@@ -635,6 +636,13 @@ a, button {
 }
 .footer__link:hover {
   color: #fff;
+}
+.footer__copyright {
+  padding: 2rem 0;
+  border-top: 2px solid #e3b723;
+}
+.footer__copyright a {
+  display: inline;
 }
 
 .bio {

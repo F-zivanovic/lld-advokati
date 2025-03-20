@@ -31,3 +31,5 @@ navLinks.forEach(link=>{
         hamburgerIcon.setAttribute('aria-expanded', "false");
     })
 })
+
+document.getElementById("year").textContent = new Date().getFullYear();
