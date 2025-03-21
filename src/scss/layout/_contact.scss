@@ -48,7 +48,7 @@
     }
 
     &__img{
-        height: 100%;
+        height: 400px;
 
         @include rwd(1200){ display: none; } 
     }

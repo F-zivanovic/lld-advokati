@@ -22,7 +22,7 @@ body {
   @include rwd(576) { font-size: 85%; }
 }
 
-h1,h2,h3,h4,h5,h6 { text-transform: capitalize; }
+// h1,h2,h3,h4,h5,h6 { text-transform: capitalize; }
 
 img {
   max-width: 100%;

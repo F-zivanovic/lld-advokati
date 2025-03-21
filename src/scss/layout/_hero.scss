@@ -45,7 +45,6 @@
 
         &__link{
             color: $text-color;
-            text-transform: capitalize;
             font-weight: 500;
 
             &:hover,
@@ -123,7 +122,7 @@
     &__heading{
         color: #fff;
         font-size: clamp(2rem, 5vw, 3.5rem);
-        max-width: 950px;
+        max-width: 900px;
         margin: 1rem 0;
 
         @include rwd(576){ max-width: 100%; }

@@ -2,7 +2,6 @@
 
 
 .services{
-    text-align: center;
 
     &__wrapper{
         @include flex(space-between, stretch, wrap);
@@ -46,6 +45,7 @@
     &__desc{
         margin: 20px 0;
         color: #6d6d6d;
+        text-align: justify;
     }
 
     &__link{

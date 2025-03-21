@@ -5,11 +5,16 @@
     gap: 3rem;
     align-items: flex-start;
 
+    @include rwd(992){ flex-direction: column; }
+
     &__item{
         flex: 3;
-        text-align: justify;
         
-        &--aside{ flex: 1 ;}
+        &--aside{ 
+            flex: 1 ;
+            
+            @include rwd(992){ order: 3;}
+        }
     }
 
     &__title{
@@ -21,7 +26,7 @@
         color: $primary-color;
         text-transform: uppercase;
         font-size: 1rem;
-        letter-spacing: 3px;
+        letter-spacing: 2px;
         margin-bottom: 1rem;
     }
 
@@ -29,6 +34,7 @@
         color: #555;
         line-height: 1.7;
         margin-bottom: 1.5rem;
+        text-align: justify;
     }
 
     &__list{
@@ -36,5 +42,18 @@
         margin-bottom: 1.5rem;
 
         span{ font-weight: bold; }
+
+        li{
+            padding-left: 1rem;
+            border-left: 2px solid $secondary-color;
+
+            &:not(:last-child){ margin-bottom: 1rem; }
+        }
+    }
+
+    &__link{
+        color: $primary-color;
+
+        &:hover{ color: $secondary-color; }
     }
 }
