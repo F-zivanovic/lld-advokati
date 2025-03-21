@@ -780,9 +780,13 @@ a, button {
   margin-bottom: 1.5rem;
   text-align: justify;
 }
+.service__text--divider {
+  margin-top: 1.5rem;
+}
 .service__list {
   color: #555;
   margin-bottom: 1.5rem;
+  text-align: justify;
 }
 .service__list span {
   font-weight: bold;
