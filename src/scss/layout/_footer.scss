@@ -21,7 +21,7 @@
     }
 
 
-    &__list{ @include flex(flex-start, stretch, column, 0.2rem); }
+    &__list{ @include flex(flex-start, stretch, column, 0.5rem); }
 
     &__link{
         display: block;
