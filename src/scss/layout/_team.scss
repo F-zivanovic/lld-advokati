@@ -9,9 +9,6 @@
         margin-top: 4rem;
     }
 
-    // &__item{
-    //     flex: 0 0 30%;
-    // }
 
     &__img{
         overflow: hidden;
@@ -35,15 +32,10 @@
     }
 
     &__role{
+        color: $primary-color;
         text-transform: uppercase;
         letter-spacing: 2px;
         font-weight: 500;
         margin: 0.5rem 0;
-    }
-
-    &__link{
-        color: $secondary-color;
-        font-weight: 700;
-        text-transform: uppercase;
     }
 }

@@ -75,7 +75,7 @@ a:focus-visible {
   letter-spacing: 2px;
   text-transform: uppercase;
   margin-bottom: 5px;
-  color: #a8a8a8;
+  color: #262626;
 }
 
 .btn {
@@ -143,9 +143,6 @@ a:focus-visible {
 .cta__link:hover {
   color: #e3b723;
 }
-.cta__btn {
-  color: #fff;
-}
 .cta__btn:hover {
   color: #fff;
 }
@@ -178,7 +175,7 @@ a:focus-visible {
   color: #e3b723;
 }
 .top-nav__btn {
-  color: #fff !important;
+  color: #262626 !important;
   border: none;
 }
 .top-nav__btn:hover {
@@ -335,11 +332,8 @@ a:focus-visible {
   color: #dedede;
   margin-bottom: 1rem;
 }
-.hero__btn {
-  color: #fff;
-}
 .hero__btn:hover {
-  color: #979797;
+  color: #fff;
 }
 
 .about {
@@ -455,11 +449,11 @@ a:focus-visible {
   }
 }
 .services__heading {
-  color: #e3b723;
+  color: #262626;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 0.9rem;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   margin-top: 1.5rem;
 }
 .services__desc {
@@ -468,7 +462,7 @@ a:focus-visible {
   text-align: justify;
 }
 .services__link {
-  color: #e3b723;
+  color: #262626;
   display: inline-block;
   vertical-align: middle;
   font-size: 13px;
@@ -477,7 +471,7 @@ a:focus-visible {
   text-transform: uppercase;
 }
 .services__link:hover {
-  color: #262626;
+  color: #e3b723;
 }
 
 .team {
@@ -510,15 +504,11 @@ a:focus-visible {
   text-transform: uppercase;
 }
 .team__role {
+  color: #262626;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 500;
   margin: 0.5rem 0;
-}
-.team__link {
-  color: #e3b723;
-  font-weight: 700;
-  text-transform: uppercase;
 }
 
 .contact {

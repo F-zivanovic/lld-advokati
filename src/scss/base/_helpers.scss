@@ -31,7 +31,7 @@
   letter-spacing: 2px;
   text-transform: uppercase;
   margin-bottom: 5px;
-  color: #a8a8a8;
+  color: $primary-color;
 }
 
 .btn{
@@ -97,8 +97,6 @@
   }
 
   &__btn{
-    color: #fff;
-
     &:hover{ color: #fff; }
   }
 }
