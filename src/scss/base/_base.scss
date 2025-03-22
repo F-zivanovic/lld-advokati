@@ -32,4 +32,13 @@ img {
 
 section { padding: 70px 0; }
 
-a, button { transition: 0.4s linear; }
+button { transition: 0.4s linear; }
+
+a{
+  transition: 0.4s linear;
+  
+    &:focus-visible {
+      text-decoration: underline;
+      outline: 1px dashed $secondary-color;
+  }
+}

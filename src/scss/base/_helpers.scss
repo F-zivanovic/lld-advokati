@@ -15,23 +15,23 @@
   color: #303030;
 
   &::after{
-      background-color: $primary-color;
-      display: block;
-      content: "";
-      width: 30px;
-      height: 1px;
-      margin: 2rem auto 0;
-      transform: rotate(91deg);
+    background-color: $primary-color;
+    display: block;
+    content: "";
+    width: 30px;
+    height: 1px;
+    margin: 2rem auto 0;
+    transform: rotate(91deg);
   }
 }
 
 .section-subtitle{
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin-bottom: 5px;
-    color: #a8a8a8;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  color: #a8a8a8;
 }
 
 .btn{
@@ -54,10 +54,17 @@
    }
 }
 
+.logo{
+  width: 220px;
+  height: 50px;
+
+  @include rwd(576){ width: 150px; }
+}
+
 
 // CTA section
 .cta{
-  background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../../src/img/logo/2.jpg');
+  background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../../src/img/logo/logo-1.webp');
   background-size: cover;
   background-position: center;
   text-align: center;

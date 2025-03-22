@@ -5,63 +5,36 @@
     background-color: #1d1d1d;
 
     &__wrapper{
-        @include flex(space-between, stretch);
+        display: flex;
+        justify-content: space-between;
         row-gap: 3rem;
         padding-bottom: 4rem;
 
         @include rwd(1200){ flex-direction: column; }
     }
 
-    &__item{
-        flex: 0 0 22%;
-    }
+    &__item{ flex: 0 0 22%; }
 
-    &__img{
-        width: 220px;
-        height: 50px;
-
-        @include rwd(576){ width: 150px; }
-    }
-
-    &__text{
-        line-height: 1.7;
-        margin: 1rem 0;
-    }
-
-    &__icons{
-        display: flex;
-        gap:1rem;
-
-        a{
-            color: $secondary-color;
-    
-            &:hover{ opacity: 0.7; }
-        }
-    }
-
-   
     &__title{
         color: #fff;
         margin-bottom: 2rem;
     }
 
-    &__list{
-        display: flex;
-        flex-direction: column;
-        gap: 0.3rem;
-    }
+
+    &__list{ @include flex(flex-start, stretch, column, 0.2rem); }
 
     &__link{
         display: block;
         color: $secondary-color;
 
-        &:hover{ color: #fff;}
+        &:hover,
+        &:focus{ color: #fff;}
     }
 
-    &__copyright{
-        padding: 2rem 0;
-        border-top: 2px solid $secondary-color;
+    // &__copyright{
+    //     padding: 2rem 0;
+    //     border-top: 2px solid $secondary-color;
 
-        a{ display: inline;}
-    }
+    //     a{ display: inline;}
+    // }
 }
