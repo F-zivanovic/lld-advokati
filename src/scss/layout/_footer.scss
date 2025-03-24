@@ -31,10 +31,10 @@
         &:focus{ color: #fff;}
     }
 
-    // &__copyright{
-    //     padding: 2rem 0;
-    //     border-top: 2px solid $secondary-color;
+    &__copyright{
+        padding: 2rem 0;
+        border-top: 2px solid $secondary-color;
 
-    //     a{ display: inline;}
-    // }
+        a{ display: inline;}
+    }
 }

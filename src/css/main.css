@@ -607,6 +607,13 @@ a:focus-visible {
 .footer__link:hover, .footer__link:focus {
   color: #fff;
 }
+.footer__copyright {
+  padding: 2rem 0;
+  border-top: 2px solid #e3b723;
+}
+.footer__copyright a {
+  display: inline;
+}
 
 .bio {
   display: flex;
