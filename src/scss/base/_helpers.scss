@@ -16,6 +16,7 @@
 
   &::after{
     background-color: $primary-color;
+
     display: block;
     content: "";
     width: 30px;
@@ -26,17 +27,19 @@
 }
 
 .section-subtitle{
+  color: $primary-color;
+
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 2px;
   text-transform: uppercase;
   margin-bottom: 5px;
-  color: $primary-color;
 }
 
 .btn{
   background-color: $secondary-color;
   color: $primary-color;
+  
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -60,46 +63,3 @@
 
   @include rwd(576){ width: 150px; }
 }
-
-
-// CTA section
-.cta{
-  background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../../src/img/logo/logo-1.webp');
-  background-size: cover;
-  background-position: center;
-  text-align: center;
- 
-  &__heading{
-    color: $secondary-color;
-    font-size: 2rem;
-
-    @include rwd(576) { font-size: 1.5rem; }
-  }
-
-  &__p{ color: #fff; }
-
-  &__box{
-    margin: 2rem 0;
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-
-    @include rwd(576) { 
-      flex-direction: column;
-      gap: 0.5rem;
-     }
-  }
-
-  &__link{
-    color: #fff;
-
-    &:hover{ color: $secondary-color; }
-  }
-
-  &__btn{
-    &:hover{ color: #fff; }
-  }
-}
-
-
-

@@ -1,0 +1,23 @@
+@use '../abstract/index' as *;
+
+.arrow__up {
+    @include position(fixed, auto, 20px, 20px, auto, 45px, 45px);
+    background-color: $secondary-color;
+    color: $primary-color;
+
+    line-height: 45px !important;
+    border-radius: 50%;
+    text-align: center;
+    border: 2px solid $secondary-color;
+    transform: translateX(200px);
+    transition: 0.4s linear;
+    cursor: pointer;
+
+    &:hover{
+        color: $secondary-color;
+
+        background: transparent;
+    }
+
+    &.active{ transform: translateX(0); }
+  }

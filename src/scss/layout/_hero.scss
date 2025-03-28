@@ -15,8 +15,13 @@
 
         @include rwd(992){
             background-color: $primary-color;
+
+            position: fixed;
+            top: 0;
+            left: 0;
             width: 100%;
             padding: 1rem 10%;
+            z-index: 100;
         }
 
         &__list{
@@ -29,6 +34,7 @@
             @include rwd(992){
                 @include position(fixed, 0, 0, auto, auto, 200px, 100%);
                 background-color: $primary-color;
+
                 flex-direction: column;
                 justify-content: center;
                 padding:0 2rem;
@@ -39,12 +45,11 @@
 
         &__link{
             color: $text-color;
+
             font-weight: 500;
 
             &:hover,
-            &.active{
-                color: #fff;
-            }
+            &.active{ color: #fff; }
         }
 
         &__hamburger{
@@ -53,7 +58,6 @@
             gap: 0.5rem;
             cursor: pointer;
             z-index: 999;
-            background: transparent;
 
             @include rwd(992){ display: flex; }
 
@@ -64,17 +68,9 @@
                 transition: 0.4s linear;
             }
 
-            .line-1{
-                &.active{ opacity: 0;}
-            }
-
-            .line-2{
-                &.active{ transform: rotate(140deg); }
-            }
-
-            .line-3{
-                &.active{ transform: translateY(-10px) rotate(-140deg); }
-            }
+            .line-1{ &.active { opacity: 0;} }
+            .line-2{ &.active { transform: rotate(140deg); } }
+            .line-3{ &.active{ transform: translateY(-10px) rotate(-140deg); } }
         }
     }
 
@@ -89,17 +85,19 @@
         @include flex(center, flex-start, column);
         height: 75vh;
         
+        @include rwd(992){ height: 100vh;}
 
         &--sm{
             height: 20vh;
             align-items: center;
 
-            @include rwd(992){ height: 30vh;}
+            @include rwd(992){ height: 50vh;}
         }
     }
 
     &__subheading{
         color: $secondary-color;
+
         text-transform: uppercase;
         font-size: clamp(1.5rem, 3.5vw, 2.5rem);
         font-weight: 500;
@@ -109,6 +107,7 @@
         &::after{
             @include position(absolute, auto, auto, 0, 0, 100px, 2px);
             background-color: $secondary-color;
+
             display: block;
             content: "";
         }
@@ -130,7 +129,5 @@
         margin-bottom: 1rem;
     }
 
-    &__btn{
-       &:hover{ color: #fff;}
-    }
+    &__btn{ &:hover{ color: #fff;} }
 }

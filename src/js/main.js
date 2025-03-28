@@ -32,4 +32,23 @@ navLinks.forEach(link=>{
     })
 })
 
-// document.getElementById("year").textContent = new Date().getFullYear();
+// Arrow up icon
+const arrowUp = document.getElementById('arrow-up');
+
+document.addEventListener("scroll", () => {
+  if (window.scrollY > 100) {
+    arrowUp.classList.add("active");
+  } else {
+    arrowUp.classList.remove("active");
+  }
+});
+
+const scrollBtn = document.querySelector(".arrow__up");
+
+scrollBtn.addEventListener("click", () => {
+  window.scroll({ top: 0, behavior: "smooth" });
+});
+
+
+// Dynamic date
+document.getElementById("year").textContent = new Date().getFullYear();

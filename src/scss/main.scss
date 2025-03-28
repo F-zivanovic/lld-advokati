@@ -1,24 +1,26 @@
+// Abstract
 @use "./abstract/variables";
 @use "./abstract/mixins";
 
+// Base
 @use "./base/base";
 @use "./base/helpers";
 
-
+// Layout
 @use 'layout/top-nav';
 @use 'layout/hero';
 @use 'layout/feature';
 @use 'layout/about';
 @use 'layout/services';
+@use 'layout/cta';
 @use 'layout/team';
 @use 'layout/contact';
 @use 'layout/footer';
 
-// Biography page
+// Components
+@use 'components/arrow-up';
+
+// Pages
 @use 'pages/bio/bio';
-
-// Areas page
 @use 'pages/areas/areas';
-
-// Service pages
 @use 'pages/service/service';

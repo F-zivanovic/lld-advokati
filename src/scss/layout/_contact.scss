@@ -35,9 +35,7 @@
         display: block;
         margin-bottom: 1rem;
 
-        @include rwd(576){ 
-            padding: 1rem;
-        }
+        @include rwd(576){ padding: 1rem; }
     }
 
     textarea{ height: 155px; }

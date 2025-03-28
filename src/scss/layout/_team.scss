@@ -9,23 +9,22 @@
         margin-top: 4rem;
     }
 
-
     &__img{
         overflow: hidden;
 
         img{
             transition: 0.4s linear;
+            height: 500px;
     
              &:hover{ transform: scale(1.2);}
         }
     }
 
-    &__body{
-        padding: 2rem;
-    }
+    &__body{ padding: 2rem; }
 
     &__name{
         color: $primary-color;
+
         letter-spacing: 3px;
         font-weight: 500;
         text-transform: uppercase;
@@ -33,6 +32,7 @@
 
     &__role{
         color: $primary-color;
+
         text-transform: uppercase;
         letter-spacing: 2px;
         font-weight: 500;

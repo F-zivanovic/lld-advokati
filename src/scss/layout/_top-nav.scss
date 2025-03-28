@@ -2,12 +2,12 @@
 
 
 .top-nav {
+    @include flex(space-between, center);
     background-color: $primary-color;
-    padding: 0;
+
+    padding:0 10%;
 
     @include rwd(1200){ display: none; }
-
-    &__wrapper { @include flex(space-between, center); }
 
     &__item {
         display: flex;
@@ -23,17 +23,21 @@
 
     &__btn {
         color: $primary-color !important;
+
         border: none;
 
         &:hover { 
-            border: none;
             background-color: $secondary-color;
+
+            border: none;
             opacity: 0.75;
         }
     }
 
-    .icon {
+    .fa-solid,
+    .fa-brands {
         color: $secondary-color;
+        
         font-size: 0.9rem;
     }
 }

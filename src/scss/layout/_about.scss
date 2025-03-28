@@ -7,7 +7,6 @@
     background-position: center;
     position: relative;
 
-
     // Header
     &__header{
         display: flex;
@@ -19,14 +18,10 @@
 
     &__box{
         background-color: $primary-color;
+
         text-align: center;
         padding:3rem 2rem;
         flex: 1;
-    }
-
-    &__icon{
-        color: $secondary-color;
-        font-size: 2rem;
     }
 
     &__heading{
@@ -46,11 +41,11 @@
         }
     }
 
-
     // Main
     &__wrapper{
         display: flex;
         align-items: center;
+        gap: 3rem;
 
         @include rwd(1200){ flex-direction: column; }
     }
@@ -72,4 +67,6 @@
         line-height: 1.7;
         text-align: justify;
     }
+
+    &__img{ height: 600px;}
 }

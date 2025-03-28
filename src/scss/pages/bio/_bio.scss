@@ -17,8 +17,11 @@
         &--aside{ flex: 1; }
     }
 
+    &__img{ height: 400px; }
+
     &__name{
         color: $primary-color;
+
         font-size: 1.5rem;
         margin-top: 2rem;
     }
@@ -31,12 +34,14 @@
 
         span{
             color: $primary-color;
+
             font-weight: 700;
         }
     }
 
     &__link{
         color: $primary-color;
+
         font-weight: 400;
 
         &:hover{ color: $secondary-color; }
@@ -46,6 +51,7 @@
 
     &__title{
         color: $primary-color;
+
         text-transform: uppercase;
         font-size: 1rem;
         letter-spacing: 4px;

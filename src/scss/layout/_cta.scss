@@ -1,0 +1,40 @@
+@use '../abstract/index' as *;
+
+
+.cta{
+    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../../src/img/logo/logo-1.webp');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+   
+    &__heading{
+      color: $secondary-color;
+
+      font-size: 2rem;
+  
+      @include rwd(576) { font-size: 1.5rem; }
+    }
+  
+    &__p{ color: #fff; }
+  
+    &__box{
+      margin: 2rem 0;
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+  
+      @include rwd(576) { 
+        flex-direction: column;
+        gap: 0.5rem;
+       }
+    }
+  
+    &__link{
+      color: #fff;
+  
+      &:hover{ color: $secondary-color; }
+    }
+  
+    &__btn{ &:hover{ color: #fff; } }
+  }
+  

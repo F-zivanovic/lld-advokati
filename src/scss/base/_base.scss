@@ -15,6 +15,7 @@
 
 body {
   color: $text-color;
+
   font-size: 100%;
   overflow-x: hidden;
   line-height: 1.4;
@@ -22,7 +23,6 @@ body {
   @include rwd(576) { font-size: 85%; }
 }
 
-// h1,h2,h3,h4,h5,h6 { text-transform: capitalize; }
 
 img {
   max-width: 100%;
@@ -30,13 +30,13 @@ img {
   vertical-align: middle;
 }
 
-section { padding: 70px 0; }
+section {  padding: 70px 0; }
 
 button { transition: 0.4s linear; }
 
 a{
   transition: 0.4s linear;
-  
+
     &:focus-visible {
       text-decoration: underline;
       outline: 1px dashed $secondary-color;
