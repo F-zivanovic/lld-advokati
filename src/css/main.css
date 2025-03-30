@@ -340,6 +340,13 @@ a:focus-visible {
   margin-top: 1rem;
   color: #fff;
 }
+.about__text_span {
+  line-height: 1.7;
+  font-size: 0.9rem;
+  display: block;
+  margin-top: 1rem;
+  color: #fff;
+}
 .about__wrapper {
   display: flex;
   align-items: center;
@@ -651,7 +658,22 @@ a:focus-visible {
 .arrow__up.active {
   transform: translateX(0);
 }
-
+.lang_btn {
+  position: fixed;
+  top: auto;
+  left: 20px;
+  bottom: 20px;
+  width: 45px;
+  height: 45px;
+  background-color: transparent;
+  color: #262626;
+  line-height: 45px !important;
+  border-radius: 50%;
+  text-align: center;
+  border: 2px solid #e3b723;
+  transition: 0.4s linear;
+  cursor: pointer;
+}
 .bio {
   display: flex;
   align-items: flex-start;
@@ -804,7 +826,7 @@ a:focus-visible {
   margin-bottom: 1.5rem;
   text-align: justify;
 }
-.service__list span {
+.service__list span.bold {
   font-weight: bold;
 }
 .service__list li {

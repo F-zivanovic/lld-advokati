@@ -52,3 +52,76 @@ scrollBtn.addEventListener("click", () => {
 
 // Dynamic date
 document.getElementById("year").textContent = new Date().getFullYear();
+
+
+// Translation
+function getCurrentLang() {
+
+  let lang = localStorage.getItem("lang");
+  if (!lang) {
+    lang = "sr";
+    localStorage.setItem("lang", lang);
+  }
+  return lang;
+}
+
+function setLang(lang) {
+  localStorage.setItem("lang", lang);
+  translatePage(lang);
+}
+
+function translatePage(lang) {
+  const translations = {
+    sr: {
+      ...(window.pageTranslationsEvry?.sr || {}),
+      ...(window.pageTranslations?.sr || {}),
+      ...(window.pageTranslationsSide?.sr || {})
+    },
+    en: {
+      ...(window.pageTranslationsEvry?.en || {}),
+      ...(window.pageTranslations?.en || {}),
+      ...(window.pageTranslationsSide?.en || {})
+    }
+  };
+
+
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const key = el.getAttribute("data-i18n");
+    const attr = el.getAttribute("data-i18n-attr"); 
+    const translation = translations[lang][key];
+  
+    if (translation) {
+      if (attr) {
+        const attrs = attr.split(",").map(a => a.trim());
+        console.log(attrs, translation);
+          attrs.forEach(a => {
+            if (a === "href") {
+              el.setAttribute(a, translations[lang][key + "_href"]);
+              el.textContent = translation;
+            } else {
+              el.setAttribute(a, translation)
+            }
+          });
+      } else {
+        el.textContent = translation;
+      }
+    }
+  });
+
+  // Lang btn switcher
+  const langSwitcher = document.getElementById("langSwitcher");
+  if (langSwitcher) langSwitcher.textContent = lang === "sr" ? "🇺🇸" : "🇷🇸";
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const currentLang = getCurrentLang();
+  translatePage(currentLang);
+
+  const langSwitcher = document.getElementById("langSwitcher");
+  if (langSwitcher) {
+    langSwitcher.addEventListener("click", () => {
+      const newLang = getCurrentLang() === "sr" ? "en" : "sr";
+      setLang(newLang);
+    });
+  }
+});
