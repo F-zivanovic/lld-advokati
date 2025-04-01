@@ -304,7 +304,23 @@
 
 
     <!-- Language switcher -->
-    <a id="langSwitcher" class="lang_btn ">SR</a>
+        <div id="langDropdown" class="lang-dropdown">
+        <div id="langOptions" class="lang-options" style="display: none;">
+            <div class="lang-option" data-lang="sr">
+              <img src="./src/img/sr.svg" alt="sr" width="20" />
+              <span>Srpski</span>
+            </div>
+            <div class="lang-option" data-lang="en">
+              <img src="/src/img/en.svg" alt="en" width="20" />
+              <span>English</span>
+            </div>
+          </div>
+        <div id="langSelected" class="lang-selected">
+          <img src="./src/img/sr.svg" alt="sr" width="20" />
+          <span>Srpski</span>
+          <span class="arrow">▼</span>
+        </div>
+    </div>
     <!-- Scroll to top -->
     <i class="arrow__up fa-solid fa-chevron-up" id="arrow-up" ></i>
 

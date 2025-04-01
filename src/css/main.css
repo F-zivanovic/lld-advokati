@@ -844,3 +844,58 @@ a:focus-visible {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+.lang-dropdown {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  cursor: pointer;
+  user-select: none;
+  font-family: sans-serif;
+  z-index: 9999;
+}
+
+.lang-selected {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: white;
+  width: 105px
+}
+
+.lang-options {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  z-index: 100;
+  margin-bottom: 5px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.lang-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.lang-option:hover {
+  background-color: #f0f0f0;
+}
+
+.arrow {
+  display: inline-block;
+  transform: rotate(-90deg); /* Početno: strelica okrenuta nagore */
+  transition: transform 0.3s ease;
+}
+
+.arrow.open {
+  transform: rotate(90deg);  /* Kada je drop otvoren: strelica okrenuta nadole */
+}

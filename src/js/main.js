@@ -52,7 +52,10 @@ scrollBtn.addEventListener("click", () => {
 
 // Dynamic date
 document.getElementById("year").textContent = new Date().getFullYear();
-
+const langMap = {
+  sr: { name: "SR", flag: "src/img/sr.svg" },
+  en: { name: "EN", flag: "src/img/en.svg" }
+};
 
 // Translation
 function getCurrentLang() {
@@ -93,7 +96,7 @@ function translatePage(lang) {
     if (translation) {
       if (attr) {
         const attrs = attr.split(",").map(a => a.trim());
-        console.log(attrs, translation);
+        
           attrs.forEach(a => {
             if (a === "href") {
               el.setAttribute(a, translations[lang][key + "_href"]);
@@ -113,15 +116,55 @@ function translatePage(lang) {
   if (langSwitcher) langSwitcher.textContent = lang === "sr" ? "🇺🇸" : "🇷🇸";
 }
 
+function updateSelectedLang(selected,lang) {
+  selected.innerHTML = `
+    <img src="${langMap[lang].flag}" alt="${lang}" width="20" />
+    <span>${langMap[lang].name}</span>
+    <span class="arrow">&gt;</span>
+  `;
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   const currentLang = getCurrentLang();
   translatePage(currentLang);
 
-  const langSwitcher = document.getElementById("langSwitcher");
-  if (langSwitcher) {
-    langSwitcher.addEventListener("click", () => {
-      const newLang = getCurrentLang() === "sr" ? "en" : "sr";
-      setLang(newLang);
+  // Postavi zastavicu i naziv jezika pri load-u
+  const selected = document.getElementById("langSelected");
+
+  
+  const options = document.getElementById("langOptions");
+
+
+
+  updateSelectedLang(selected,currentLang);
+
+  selected.addEventListener("click", (e) => {
+    e.stopPropagation();
+    console.log("lang selected");
+    if (options.style.display === "none" || options.style.display === "") {
+      options.style.display = "block";
+      document.querySelector(".arrow").classList.add("open");
+    } else {
+      options.style.display = "none";
+      document.querySelector(".arrow").classList.remove("open");
+    }
+  });
+
+  document.querySelectorAll(".lang-option").forEach(option => {
+    option.addEventListener("click", () => {
+      console.log("lang option clicked");
+      const lang = option.getAttribute("data-lang");
+      console.log("lang", lang);
+      setLang(lang);
+      updateSelectedLang(selected,lang);
+      options.style.display = "none";
     });
-  }
+  });
+
+  // Close dropdown on outside click
+  document.addEventListener("click", (e) => {
+    if (!document.getElementById("langDropdown").contains(e.target)) {
+      options.style.display = "none";
+    }
+  });
 });
