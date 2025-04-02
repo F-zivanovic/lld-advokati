@@ -673,9 +673,6 @@ a:focus-visible {
   width: 105px;
   transition: 0.4s linear;
 }
-.lang-dropdown .lang-selected:hover {
-  background-color: white;
-}
 .lang-dropdown .lang-options {
   background: #e3b723;
   position: absolute;
@@ -693,9 +690,6 @@ a:focus-visible {
   cursor: pointer;
   padding: 0.5rem;
   transition: 0.4s linear;
-}
-.lang-dropdown .lang-option:hover {
-  background-color: #fff;
 }
 .lang-dropdown .arrow {
   color: #000;
