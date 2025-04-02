@@ -3,7 +3,7 @@ window.pageTranslations = {
   sr: {
     page_title: "LLD Advokati",
     hero_subheading: "LLD Advokati",
-    hero_title: "Advokatska kancelarija Beograd!",
+    hero_title: "Advokatska kancelarija Beograd",
     hero_btn: "kontaktirajte nas",
 
     quote_heading_1: "krivično pravo",
@@ -82,7 +82,7 @@ window.pageTranslations = {
 
     page_title: "LLD Lawyers",
     hero_subheading: "LLD Lawyers",
-    hero_title: "Law Firm Belgrade!",
+    hero_title: "Law Firm Belgrade",
     hero_btn: "contact us",
 
     quote_heading_1: "CRIMINAL LAW",

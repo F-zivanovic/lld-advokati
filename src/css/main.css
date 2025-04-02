@@ -340,13 +340,6 @@ a:focus-visible {
   margin-top: 1rem;
   color: #fff;
 }
-.about__text_span {
-  line-height: 1.7;
-  font-size: 0.9rem;
-  display: block;
-  margin-top: 1rem;
-  color: #fff;
-}
 .about__wrapper {
   display: flex;
   align-items: center;
@@ -658,22 +651,62 @@ a:focus-visible {
 .arrow__up.active {
   transform: translateX(0);
 }
-.lang_btn {
+
+.lang-dropdown {
   position: fixed;
-  top: auto;
-  left: 20px;
   bottom: 20px;
-  width: 45px;
-  height: 45px;
-  background-color: transparent;
-  color: #262626;
-  line-height: 45px !important;
-  border-radius: 50%;
-  text-align: center;
-  border: 2px solid #e3b723;
-  transition: 0.4s linear;
+  left: 20px;
   cursor: pointer;
+  user-select: none;
+  z-index: 9999;
+  color: #000;
 }
+.lang-dropdown .lang-selected {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row nowrap;
+  gap: 0;
+  background: #e3b723;
+  padding: 5px 10px;
+  border-radius: 4px;
+  width: 105px;
+  transition: 0.4s linear;
+}
+.lang-dropdown .lang-selected:hover {
+  background-color: white;
+}
+.lang-dropdown .lang-options {
+  background: #e3b723;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  border-radius: 4px;
+  z-index: 100;
+  margin-bottom: 5px;
+}
+.lang-dropdown .lang-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: 0.4s linear;
+}
+.lang-dropdown .lang-option:hover {
+  background-color: #fff;
+}
+.lang-dropdown .arrow {
+  color: #000;
+  display: inline-block;
+  transform: rotate(-90deg);
+  transition: transform 0.4s ease;
+}
+.lang-dropdown .arrow.open {
+  transform: rotate(90deg);
+}
+
 .bio {
   display: flex;
   align-items: flex-start;
@@ -826,7 +859,7 @@ a:focus-visible {
   margin-bottom: 1.5rem;
   text-align: justify;
 }
-.service__list span.bold {
+.service__list span {
   font-weight: bold;
 }
 .service__list li {
@@ -844,58 +877,3 @@ a:focus-visible {
 }
 
 /*# sourceMappingURL=main.css.map */
-
-.lang-dropdown {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  cursor: pointer;
-  user-select: none;
-  font-family: sans-serif;
-  z-index: 9999;
-}
-
-.lang-selected {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 5px 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  background: white;
-  width: 105px
-}
-
-.lang-options {
-  position: absolute;
-  bottom: 100%;
-  left: 0;
-  background: white;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  z-index: 100;
-  margin-bottom: 5px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-}
-
-.lang-option {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 5px 10px;
-  cursor: pointer;
-}
-
-.lang-option:hover {
-  background-color: #f0f0f0;
-}
-
-.arrow {
-  display: inline-block;
-  transform: rotate(-90deg); /* Početno: strelica okrenuta nagore */
-  transition: transform 0.3s ease;
-}
-
-.arrow.open {
-  transform: rotate(90deg);  /* Kada je drop otvoren: strelica okrenuta nadole */
-}
