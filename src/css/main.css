@@ -340,6 +340,13 @@ a:focus-visible {
   margin-top: 1rem;
   color: #fff;
 }
+.about__text__span {
+  line-height: 1.7;
+  font-size: 0.9rem;
+  display: block;
+  margin-top: 1rem;
+  color: #fff;
+}
 .about__wrapper {
   display: flex;
   align-items: center;
@@ -853,7 +860,7 @@ a:focus-visible {
   margin-bottom: 1.5rem;
   text-align: justify;
 }
-.service__list span {
+.service__list span.bold {
   font-weight: bold;
 }
 .service__list li {

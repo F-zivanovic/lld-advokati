@@ -1,8 +1,6 @@
 // This file is part of the index page translations.
 window.pageTranslations = {
   sr: {
-    page_title: "LLD Advokati",
-    hero_subheading: "LLD Advokati",
     hero_title: "Advokatska kancelarija Beograd",
     hero_btn: "kontaktirajte nas",
 
@@ -80,8 +78,6 @@ window.pageTranslations = {
   },
   en: {
 
-    page_title: "LLD Lawyers",
-    hero_subheading: "LLD Lawyers",
     hero_title: "Law Firm Belgrade",
     hero_btn: "contact us",
 
@@ -106,7 +102,7 @@ window.pageTranslations = {
     services_title: "Legal Areas",
     services_btn: "Learn More",
     
-    services_heading_1: "commercial law",
+    services_heading_1: "corporate law",
     services_text_1: `From company formation and corporate structuring to complex business transactions,
     our goal is to provide the legal certainty and support you need
     for efficient and successful operations.`,
@@ -121,7 +117,7 @@ window.pageTranslations = {
     business, commercial, family, or personal matters,
     our firm is ready to assist you.`,
     
-    services_heading_4: "labor law",
+    services_heading_4: "employment law",
     services_text_4: `With many years of experience in this field, our aim is to ensure a safe and fair work environment,
     respecting the rights of all parties and adhering to applicable legislation.`,
     
