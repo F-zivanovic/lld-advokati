@@ -46,7 +46,9 @@
         margin-bottom: 1.5rem;
         text-align: justify;
 
-        span{ font-weight: bold; }
+        span.bold{ 
+            font-weight: bold; 
+        }
 
         li{
             padding-left: 1rem;
