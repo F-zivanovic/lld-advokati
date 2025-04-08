@@ -44,7 +44,7 @@ window.pageTranslationsEvry = {
     footer_contact_item_1: "Commercial Law",
     footer_contact_item_2: "Real Estate",
     footer_contact_item_3: "Dispute Resolution",
-    footer_contact_item_4: "Labor Law",
+    footer_contact_item_4: "Employment Law",
     footer_contact_item_5: "Immigration Law",
     footer_contact_item_6: "Data Protection",
     footer_nav_title: "Links",

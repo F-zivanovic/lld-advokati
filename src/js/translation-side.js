@@ -22,7 +22,7 @@ window.pageTranslationsSide = {
     service_item_1: "Personal Data Protection",
     service_item_2: "Administrative and Tax Law",
     service_item_3: "Dispute Resolution",
-    service_item_4: "Labor Law",
+    service_item_4: "Employment Law",
     service_item_5: "Corparate Law",
     service_item_6: "Real Estate and Construction Law",
     service_item_7: "Intellectual Property Law",
